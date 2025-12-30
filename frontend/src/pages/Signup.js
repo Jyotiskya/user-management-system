@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import api from '../api';
 
 const Signup = () => {
     const [formData, setFormData] = useState({ 
@@ -15,7 +16,7 @@ const Signup = () => {
             return alert("Passwords do not match");
         }
         try {
-            await axios.post('http://localhost:5000/api/auth/signup', {
+            await api.post('/api/auth/signup', {
                 full_name: formData.full_name,
                 email: formData.email,
                 password: formData.password

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import api from '../api';
 
 const Dashboard = () => {
     const [users, setUsers] = useState([]);
@@ -9,7 +10,7 @@ const Dashboard = () => {
 
     const fetchUsers = async () => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/users/?page=${page}`, {
+            const res = await api.get(`/api/users/?page=${page}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setUsers(res.data.users);
@@ -28,7 +29,7 @@ const Dashboard = () => {
         if(!window.confirm(`Are you sure you want to make user ${newStatus}?`)) return;
 
         try {
-            await axios.patch(`http://localhost:5000/api/users/${id}/status`, 
+            await api.patch(`/api/users/${id}/status`, 
                 { status: newStatus },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

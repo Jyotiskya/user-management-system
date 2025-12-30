@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
+import api from '../api';
 
 const Profile = () => {
     const { user } = useContext(AuthContext);
@@ -10,7 +11,7 @@ const Profile = () => {
     const handleUpdate = async () => {
         try {
             const token = localStorage.getItem('token');
-            await axios.put('http://localhost:5000/api/users/profile', data, {
+            await api.put('/api/users/profile', data, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             alert("Profile updated!");
