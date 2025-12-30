@@ -36,7 +36,7 @@ A full-stack User Management System featuring JWT authentication, Role-Based Acc
 - `FLASK_APP`
 - `FLASK_DEBUG`
 
-## [cite_start]API Endpoints [cite: 182]
+## API Endpoints 
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
 | POST | `/api/auth/signup` | Register new user | No |
