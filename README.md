@@ -3,12 +3,12 @@
 ## Project Overview
 A full-stack User Management System featuring JWT authentication, Role-Based Access Control (Admin/User), and user lifecycle management. Built for the Purple Merit Backend Intern Assessment.
 
-## [cite_start]Tech Stack [cite: 171]
+## Tech Stack 
 - **Backend:** Python (Flask), SQLAlchemy, Flask-JWT-Extended
 - **Frontend:** React.js, Axios, React Router
 - **Database:** PostgreSQL (Cloud-hosted)
 
-## [cite_start]Live Deployment Links [cite: 165]
+## Live Deployment Links 
 - **Frontend:** [Link to your Vercel deployment]
 - **Backend:** [Link to your Render deployment]
 - **API Docs:** [Link to Postman Collection]
@@ -29,7 +29,7 @@ A full-stack User Management System featuring JWT authentication, Role-Based Acc
 2. Install: `npm install`
 3. Start: `npm start`
 
-## [cite_start]Environment Variables (.env) [cite: 177]
+## Environment Variables (.env) 
 **Backend:**
 - `DATABASE_URL`
 - `JWT_SECRET_KEY`
