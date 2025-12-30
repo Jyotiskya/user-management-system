@@ -1,45 +1,46 @@
-# Purple Merit - User Management System
+# 🚀 User Management System - Purple Merit Assessment
 
-## Project Overview
-A full-stack User Management System featuring JWT authentication, Role-Based Access Control (Admin/User), and user lifecycle management. Built for the Purple Merit Backend Intern Assessment.
+## 📋 Project Overview
+A full-stack User Management System designed to handle secure authentication and user administration. This project features **JWT-based authentication**, **Role-Based Access Control (RBAC)**, and a responsive React frontend.
 
-## Tech Stack 
-- **Backend:** Python (Flask), SQLAlchemy, Flask-JWT-Extended
-- **Frontend:** React.js, Axios, React Router
-- **Database:** PostgreSQL (Cloud-hosted)
+It was developed as part of the **Purple Merit Backend Intern Assessment**.
 
-## Live Deployment Links 
-- **Frontend:** [Link to your Vercel deployment]
-- **Backend:** [Link to your Render deployment]
-- **API Docs:** [Link to Postman Collection]
+### ✨ Key Features
+* **Secure Authentication:** User Signup & Login using JWT Tokens.
+* **Role-Based Access Control:**
+  * **Admin:** Can view all users, activate/deactivate accounts.
+  * **User:** Can only view and update their own profile.
+* **Database Management:** Cloud-hosted PostgreSQL database.
+* **Responsive UI:** Built with React.js for a seamless experience.
 
-## Setup Instructions
+---
 
-### Backend
-1. `cd backend`
-2. Create virtual env: `python -m venv venv`
-3. Activate: `source venv/bin/activate` (Mac/Linux) or `venv\Scripts\activate` (Windows)
-4. Install: `pip install -r requirements.txt`
-5. Create `.env` file (see below).
-6. Run migrations: `flask db init`, `flask db migrate`, `flask db upgrade`
-7. Start server: `python run.py`
+## 🔗 Live Deployment Links
 
-### Frontend
-1. `cd frontend`
-2. Install: `npm install`
-3. Start: `npm start`
+| Service | Status | Link |
+| :--- | :--- | :--- |
+| **Frontend (Website)** | 🟢 Live | [View Live Site](https://user-management-system-xi-blue.vercel.app/) |
+| **Backend (API)** | 🟢 Live | [View API Server](https://user-management-system-eixh.onrender.com/) |
 
-## Environment Variables (.env) 
-**Backend:**
-- `DATABASE_URL`
-- `JWT_SECRET_KEY`
-- `FLASK_APP`
-- `FLASK_DEBUG`
+---
 
-## API Endpoints 
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/auth/signup` | Register new user | No |
-| POST | `/api/auth/login` | Login user | No |
-| GET | `/api/users/` | Get all users (Admin) | Yes |
-| PATCH | `/api/users/<id>/status` | Activate/Deactivate | Yes |
+## 🛠️ Tech Stack
+
+| Category | Technologies Used |
+| :--- | :--- |
+| **Backend** | Python 3, Flask, SQLAlchemy, Flask-JWT-Extended, Gunicorn |
+| **Frontend** | React.js, Axios, React Router DOM, CSS3 |
+| **Database** | PostgreSQL (Hosted on Render) |
+| **Deployment** | Vercel (Frontend), Render (Backend) |
+| **Tools** | Git, Postman, VS Code |
+
+---
+
+## ⚙️ Local Setup Guide
+
+Follow these steps to run the project locally on your machine.
+
+### 1️⃣ Clone the Repository
+```bash
+git clone <your-github-repo-link>
+cd User-Management-System
